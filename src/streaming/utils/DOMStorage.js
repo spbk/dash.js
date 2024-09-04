@@ -40,9 +40,9 @@ const legacyKeysAndReplacements = [
 ];
 
 const LOCAL_STORAGE_BITRATE_KEY_TEMPLATE = 'dashjs_?_bitrate';
-const LOCAL_STORAGE_SETTINGS_KEY_TEMPLATE = 'dashjs_?_settings';
+// const LOCAL_STORAGE_SETTINGS_KEY_TEMPLATE = 'dashjs_?_settings';
 
-const STORAGE_TYPE_LOCAL = 'localStorage';
+const STORAGE_TYPE_LOCAL = '';
 const STORAGE_TYPE_SESSION = 'sessionStorage';
 const LAST_BITRATE = 'lastBitrate';
 const LAST_MEDIA_SETTINGS = 'lastMediaSettings';
@@ -68,13 +68,13 @@ function DOMStorage(config) {
 
         supported = false;
 
-        const testKey = '1';
-        const testValue = '1';
+        // const testKey = '1';
+        // const testValue = '1';
         let storage;
 
         try {
             if (typeof window !== 'undefined') {
-                storage = window[type];
+                // storage = window[type];
             }
         } catch (error) {
             logger.warn('DOMStorage access denied: ' + error.message);
@@ -91,8 +91,8 @@ function DOMStorage(config) {
          Check if the storage can be used
          */
         try {
-            storage.setItem(testKey, testValue);
-            storage.removeItem(testKey);
+            //storage.setItem(testKey, testValue);
+            //storage.removeItem(testKey);
             supported = true;
         } catch (error) {
             logger.warn('DOMStorage is supported, but cannot be used: ' + error.message);
@@ -103,18 +103,7 @@ function DOMStorage(config) {
 
     function translateLegacyKeys() {
         if (isSupported(STORAGE_TYPE_LOCAL)) {
-            legacyKeysAndReplacements.forEach(entry => {
-                const value = localStorage.getItem(entry.oldKey);
-
-                if (value) {
-                    localStorage.removeItem(entry.oldKey);
-
-                    try {
-                        localStorage.setItem(entry.newKey, value);
-                    } catch (e) {
-                        logger.error(e.message);
-                    }
-                }
+            legacyKeysAndReplacements.forEach(_entry => {
             });
         }
     }
@@ -135,7 +124,7 @@ function DOMStorage(config) {
         }
     }
 
-    function getSavedMediaSettings(type) {
+    function getSavedMediaSettings(_type) {
         checkConfig();
 
         if (!settings.get().streaming.lastMediaSettingsCachingInfo.enabled) {
@@ -146,14 +135,12 @@ function DOMStorage(config) {
 
         //Checks local storage to see if there is valid, non-expired media settings
         if (canStore(STORAGE_TYPE_LOCAL, LAST_MEDIA_SETTINGS)) {
-            const key = LOCAL_STORAGE_SETTINGS_KEY_TEMPLATE.replace(/\?/, type);
             try {
-                const obj = JSON.parse(localStorage.getItem(key)) || {};
+                const obj = {};
                 const isExpired = (new Date().getTime() - parseInt(obj.timestamp, 10)) >= settings.get().streaming.lastMediaSettingsCachingInfo.ttl || false;
                 mediaSettings = obj.settings;
 
                 if (isExpired) {
-                    localStorage.removeItem(key);
                     mediaSettings = null;
                 }
             } catch (e) {
@@ -175,9 +162,8 @@ function DOMStorage(config) {
         //Checks local storage to see if there is valid, non-expired bit rate
         //hinting from the last play session to use as a starting bit rate.
         if (canStore(STORAGE_TYPE_LOCAL, LAST_BITRATE)) {
-            const key = LOCAL_STORAGE_BITRATE_KEY_TEMPLATE.replace(/\?/, type);
             try {
-                const obj = JSON.parse(localStorage.getItem(key)) || {};
+                const obj = {};
                 const isExpired = (new Date().getTime() - parseInt(obj.timestamp, 10)) >= settings.get().streaming.lastBitrateCachingInfo.ttl || false;
                 const bitrate = parseFloat(obj.bitrate);
 
@@ -185,7 +171,6 @@ function DOMStorage(config) {
                     savedBitrate = bitrate;
                     logger.debug('Last saved bitrate for ' + type + ' was ' + bitrate);
                 } else if (isExpired) {
-                    localStorage.removeItem(key);
                 }
             } catch (e) {
                 return null;
@@ -194,22 +179,18 @@ function DOMStorage(config) {
         return savedBitrate;
     }
 
-    function setSavedMediaSettings(type, value) {
+    function setSavedMediaSettings(_type, _value) {
         if (canStore(STORAGE_TYPE_LOCAL, LAST_MEDIA_SETTINGS)) {
-            const key = LOCAL_STORAGE_SETTINGS_KEY_TEMPLATE.replace(/\?/, type);
             try {
-                localStorage.setItem(key, JSON.stringify({ settings: value, timestamp: getTimestamp() }));
             } catch (e) {
                 logger.error(e.message);
             }
         }
     }
 
-    function setSavedBitrateSettings(type, bitrate) {
+    function setSavedBitrateSettings(_type, bitrate) {
         if (canStore(STORAGE_TYPE_LOCAL, LAST_BITRATE) && bitrate) {
-            const key = LOCAL_STORAGE_BITRATE_KEY_TEMPLATE.replace(/\?/, type);
             try {
-                localStorage.setItem(key, JSON.stringify({ bitrate: bitrate.toFixed(3), timestamp: getTimestamp() }));
             } catch (e) {
                 logger.error(e.message);
             }
