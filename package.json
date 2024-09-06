@@ -10,7 +10,7 @@
         "dev": "tsc && webpack --config build/webpack.dev.js --mode development --watch --progress",
         "start": "webpack serve --config build/webpack.dev.js",
         "lint": "eslint src/**/*.js test/unit/mocks/*.js test/unit/*.js",
-        "build": "tsc && rimraf dist && webpack --config build/webpack.prod.js",
+        "build": "tsc && rimraf dist && webpack --config build/webpack.prod.js && sed -i -r 's/n\\.g\\.localStorage(\\[e\\])?/null/g' ./dist/dash.mediaplayer.min.js",
         "postbuild": "cp index.d.ts dash.d.ts",
         "doc": "jsdoc -c build/jsdoc/jsdoc_conf.json -d docs/jsdoc",
         "test": "karma start karma.unit.conf.js",

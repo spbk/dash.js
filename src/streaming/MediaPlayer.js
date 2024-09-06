@@ -53,7 +53,6 @@ import SchemeLoaderFactory from './net/SchemeLoaderFactory';
 import VideoModel from './models/VideoModel';
 import CmcdModel from './models/CmcdModel';
 import CmsdModel from './models/CmsdModel';
-import DOMStorage from './utils/DOMStorage';
 import Debug from './../core/Debug';
 import Errors from './../core/errors/Errors';
 import EventBus from './../core/EventBus';
@@ -345,9 +344,12 @@ function MediaPlayer() {
                 settings: settings
             });
 
-            domStorage = DOMStorage(context).getInstance({
-                settings: settings
-            });
+            domStorage = {
+                getSavedBitrateSettings: () => {},
+                setSavedBitrateSettings: () => {},
+                getSavedMediaSettings: () => {},
+                setSavedMediaSettings: () => {},
+            };
 
             adapter.setConfig({
                 constants: Constants,

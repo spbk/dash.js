@@ -16710,29 +16710,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _models_VideoModel__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./models/VideoModel */ "./src/streaming/models/VideoModel.js");
 /* harmony import */ var _models_CmcdModel__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./models/CmcdModel */ "./src/streaming/models/CmcdModel.js");
 /* harmony import */ var _models_CmsdModel__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./models/CmsdModel */ "./src/streaming/models/CmsdModel.js");
-/* harmony import */ var _utils_DOMStorage__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./utils/DOMStorage */ "./src/streaming/utils/DOMStorage.js");
-/* harmony import */ var _core_Debug__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./../core/Debug */ "./src/core/Debug.js");
-/* harmony import */ var _core_errors_Errors__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./../core/errors/Errors */ "./src/core/errors/Errors.js");
-/* harmony import */ var _core_EventBus__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./../core/EventBus */ "./src/core/EventBus.js");
-/* harmony import */ var _core_events_Events__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./../core/events/Events */ "./src/core/events/Events.js");
-/* harmony import */ var _MediaPlayerEvents__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./MediaPlayerEvents */ "./src/streaming/MediaPlayerEvents.js");
-/* harmony import */ var _core_FactoryMaker__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../core/FactoryMaker */ "./src/core/FactoryMaker.js");
-/* harmony import */ var _core_Settings__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../core/Settings */ "./src/core/Settings.js");
-/* harmony import */ var _core_Version__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../core/Version */ "./src/core/Version.js");
-/* harmony import */ var _dash_controllers_SegmentBaseController__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../dash/controllers/SegmentBaseController */ "./src/dash/controllers/SegmentBaseController.js");
-/* harmony import */ var _dash_DashAdapter__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../dash/DashAdapter */ "./src/dash/DashAdapter.js");
-/* harmony import */ var _dash_DashMetrics__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../dash/DashMetrics */ "./src/dash/DashMetrics.js");
-/* harmony import */ var _dash_utils_TimelineConverter__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../dash/utils/TimelineConverter */ "./src/dash/utils/TimelineConverter.js");
-/* harmony import */ var _vo_metrics_HTTPRequest__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./vo/metrics/HTTPRequest */ "./src/streaming/vo/metrics/HTTPRequest.js");
-/* harmony import */ var _externals_base64__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../externals/base64 */ "./externals/base64.js");
-/* harmony import */ var codem_isoboxer__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! codem-isoboxer */ "./node_modules/codem-isoboxer/dist/iso_boxer.js");
-/* harmony import */ var _vo_DashJSError__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./vo/DashJSError */ "./src/streaming/vo/DashJSError.js");
-/* harmony import */ var _utils_SupervisorTools__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./utils/SupervisorTools */ "./src/streaming/utils/SupervisorTools.js");
-/* harmony import */ var _ManifestUpdater__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./ManifestUpdater */ "./src/streaming/ManifestUpdater.js");
-/* harmony import */ var _streaming_utils_URLUtils__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../streaming/utils/URLUtils */ "./src/streaming/utils/URLUtils.js");
-/* harmony import */ var _utils_BoxParser__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./utils/BoxParser */ "./src/streaming/utils/BoxParser.js");
-/* harmony import */ var _text_TextController__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./text/TextController */ "./src/streaming/text/TextController.js");
-/* harmony import */ var _models_CustomParametersModel__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./models/CustomParametersModel */ "./src/streaming/models/CustomParametersModel.js");
+/* harmony import */ var _core_Debug__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./../core/Debug */ "./src/core/Debug.js");
+/* harmony import */ var _core_errors_Errors__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./../core/errors/Errors */ "./src/core/errors/Errors.js");
+/* harmony import */ var _core_EventBus__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./../core/EventBus */ "./src/core/EventBus.js");
+/* harmony import */ var _core_events_Events__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./../core/events/Events */ "./src/core/events/Events.js");
+/* harmony import */ var _MediaPlayerEvents__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./MediaPlayerEvents */ "./src/streaming/MediaPlayerEvents.js");
+/* harmony import */ var _core_FactoryMaker__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../core/FactoryMaker */ "./src/core/FactoryMaker.js");
+/* harmony import */ var _core_Settings__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../core/Settings */ "./src/core/Settings.js");
+/* harmony import */ var _core_Version__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../core/Version */ "./src/core/Version.js");
+/* harmony import */ var _dash_controllers_SegmentBaseController__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../dash/controllers/SegmentBaseController */ "./src/dash/controllers/SegmentBaseController.js");
+/* harmony import */ var _dash_DashAdapter__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../dash/DashAdapter */ "./src/dash/DashAdapter.js");
+/* harmony import */ var _dash_DashMetrics__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../dash/DashMetrics */ "./src/dash/DashMetrics.js");
+/* harmony import */ var _dash_utils_TimelineConverter__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../dash/utils/TimelineConverter */ "./src/dash/utils/TimelineConverter.js");
+/* harmony import */ var _vo_metrics_HTTPRequest__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./vo/metrics/HTTPRequest */ "./src/streaming/vo/metrics/HTTPRequest.js");
+/* harmony import */ var _externals_base64__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../externals/base64 */ "./externals/base64.js");
+/* harmony import */ var codem_isoboxer__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! codem-isoboxer */ "./node_modules/codem-isoboxer/dist/iso_boxer.js");
+/* harmony import */ var _vo_DashJSError__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./vo/DashJSError */ "./src/streaming/vo/DashJSError.js");
+/* harmony import */ var _utils_SupervisorTools__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./utils/SupervisorTools */ "./src/streaming/utils/SupervisorTools.js");
+/* harmony import */ var _ManifestUpdater__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./ManifestUpdater */ "./src/streaming/ManifestUpdater.js");
+/* harmony import */ var _streaming_utils_URLUtils__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../streaming/utils/URLUtils */ "./src/streaming/utils/URLUtils.js");
+/* harmony import */ var _utils_BoxParser__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./utils/BoxParser */ "./src/streaming/utils/BoxParser.js");
+/* harmony import */ var _text_TextController__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./text/TextController */ "./src/streaming/text/TextController.js");
+/* harmony import */ var _models_CustomParametersModel__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./models/CustomParametersModel */ "./src/streaming/models/CustomParametersModel.js");
 /**
  * The copyright in this software is being made available under the BSD License,
  * included below. This software may be subject to other third party and contributor
@@ -16763,7 +16762,6 @@ __webpack_require__.r(__webpack_exports__);
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-
 
 
 
@@ -16855,9 +16853,9 @@ function MediaPlayer() {
 
   var MEDIA_PLAYER_NOT_INITIALIZED_ERROR = 'MediaPlayer not initialized!';
   var context = this.context;
-  var eventBus = (0,_core_EventBus__WEBPACK_IMPORTED_MODULE_28__["default"])(context).getInstance();
-  var settings = (0,_core_Settings__WEBPACK_IMPORTED_MODULE_32__["default"])(context).getInstance();
-  var debug = (0,_core_Debug__WEBPACK_IMPORTED_MODULE_26__["default"])(context).getInstance({
+  var eventBus = (0,_core_EventBus__WEBPACK_IMPORTED_MODULE_27__["default"])(context).getInstance();
+  var settings = (0,_core_Settings__WEBPACK_IMPORTED_MODULE_31__["default"])(context).getInstance();
+  var debug = (0,_core_Debug__WEBPACK_IMPORTED_MODULE_25__["default"])(context).getInstance({
     settings: settings
   });
   var instance, logger, source, protectionData, mediaPlayerInitialized, streamingInitialized, playbackInitialized, autoPlay, providedStartTime, abrController, schemeLoaderFactory, timelineConverter, mediaController, protectionController, metricsReportingController, mssHandler, offlineController, adapter, mediaPlayerModel, customParametersModel, errHandler, baseURLController, capabilities, capabilitiesFilter, streamController, textController, gapController, playbackController, serviceDescriptionController, contentSteeringController, catchupController, dashMetrics, manifestModel, cmcdModel, cmsdModel, videoModel, uriFragmentModel, domStorage, segmentBaseController;
@@ -16879,9 +16877,9 @@ function MediaPlayer() {
     protectionData = null;
     adapter = null;
     segmentBaseController = null;
-    _core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"].extend(_MediaPlayerEvents__WEBPACK_IMPORTED_MODULE_30__["default"]);
+    _core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"].extend(_MediaPlayerEvents__WEBPACK_IMPORTED_MODULE_29__["default"]);
     mediaPlayerModel = (0,_models_MediaPlayerModel__WEBPACK_IMPORTED_MODULE_19__["default"])(context).getInstance();
-    customParametersModel = (0,_models_CustomParametersModel__WEBPACK_IMPORTED_MODULE_47__["default"])(context).getInstance();
+    customParametersModel = (0,_models_CustomParametersModel__WEBPACK_IMPORTED_MODULE_46__["default"])(context).getInstance();
     videoModel = (0,_models_VideoModel__WEBPACK_IMPORTED_MODULE_22__["default"])(context).getInstance();
     uriFragmentModel = (0,_models_URIFragmentModel__WEBPACK_IMPORTED_MODULE_17__["default"])(context).getInstance();
   }
@@ -16996,14 +16994,14 @@ function MediaPlayer() {
     }
 
     if (!capabilities.supportsMediaSource()) {
-      errHandler.error(new _vo_DashJSError__WEBPACK_IMPORTED_MODULE_41__["default"](_core_errors_Errors__WEBPACK_IMPORTED_MODULE_27__["default"].CAPABILITY_MEDIASOURCE_ERROR_CODE, _core_errors_Errors__WEBPACK_IMPORTED_MODULE_27__["default"].CAPABILITY_MEDIASOURCE_ERROR_MESSAGE));
+      errHandler.error(new _vo_DashJSError__WEBPACK_IMPORTED_MODULE_40__["default"](_core_errors_Errors__WEBPACK_IMPORTED_MODULE_26__["default"].CAPABILITY_MEDIASOURCE_ERROR_CODE, _core_errors_Errors__WEBPACK_IMPORTED_MODULE_26__["default"].CAPABILITY_MEDIASOURCE_ERROR_MESSAGE));
       return;
     }
 
     if (!mediaPlayerInitialized) {
       mediaPlayerInitialized = true; // init some controllers and models
 
-      timelineConverter = (0,_dash_utils_TimelineConverter__WEBPACK_IMPORTED_MODULE_37__["default"])(context).getInstance();
+      timelineConverter = (0,_dash_utils_TimelineConverter__WEBPACK_IMPORTED_MODULE_36__["default"])(context).getInstance();
 
       if (!abrController) {
         abrController = (0,_controllers_AbrController__WEBPACK_IMPORTED_MODULE_20__["default"])(context).getInstance();
@@ -17048,21 +17046,24 @@ function MediaPlayer() {
         capabilitiesFilter = (0,_utils_CapabilitiesFilter__WEBPACK_IMPORTED_MODULE_15__["default"])(context).getInstance();
       }
 
-      adapter = (0,_dash_DashAdapter__WEBPACK_IMPORTED_MODULE_35__["default"])(context).getInstance();
+      adapter = (0,_dash_DashAdapter__WEBPACK_IMPORTED_MODULE_34__["default"])(context).getInstance();
       manifestModel = (0,_models_ManifestModel__WEBPACK_IMPORTED_MODULE_18__["default"])(context).getInstance();
       cmcdModel = (0,_models_CmcdModel__WEBPACK_IMPORTED_MODULE_23__["default"])(context).getInstance();
       cmsdModel = (0,_models_CmsdModel__WEBPACK_IMPORTED_MODULE_24__["default"])(context).getInstance();
-      dashMetrics = (0,_dash_DashMetrics__WEBPACK_IMPORTED_MODULE_36__["default"])(context).getInstance({
+      dashMetrics = (0,_dash_DashMetrics__WEBPACK_IMPORTED_MODULE_35__["default"])(context).getInstance({
         settings: settings
       });
-      domStorage = (0,_utils_DOMStorage__WEBPACK_IMPORTED_MODULE_25__["default"])(context).getInstance({
-        settings: settings
-      });
+      domStorage = {
+        getSavedBitrateSettings: function getSavedBitrateSettings() {},
+        setSavedBitrateSettings: function setSavedBitrateSettings() {},
+        getSavedMediaSettings: function getSavedMediaSettings() {},
+        setSavedMediaSettings: function setSavedMediaSettings() {}
+      };
       adapter.setConfig({
         constants: _constants_Constants__WEBPACK_IMPORTED_MODULE_1__["default"],
         cea608parser: (_externals_cea608_parser__WEBPACK_IMPORTED_MODULE_0___default()),
         errHandler: errHandler,
-        BASE64: _externals_base64__WEBPACK_IMPORTED_MODULE_39__
+        BASE64: _externals_base64__WEBPACK_IMPORTED_MODULE_38__
       });
 
       if (!baseURLController) {
@@ -17078,17 +17079,17 @@ function MediaPlayer() {
       });
 
       if (!segmentBaseController) {
-        segmentBaseController = (0,_dash_controllers_SegmentBaseController__WEBPACK_IMPORTED_MODULE_34__["default"])(context).getInstance({
+        segmentBaseController = (0,_dash_controllers_SegmentBaseController__WEBPACK_IMPORTED_MODULE_33__["default"])(context).getInstance({
           dashMetrics: dashMetrics,
           mediaPlayerModel: mediaPlayerModel,
           errHandler: errHandler,
           baseURLController: baseURLController,
-          events: _core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"],
+          events: _core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"],
           eventBus: eventBus,
           debug: debug,
-          boxParser: (0,_utils_BoxParser__WEBPACK_IMPORTED_MODULE_45__["default"])(context).getInstance(),
+          boxParser: (0,_utils_BoxParser__WEBPACK_IMPORTED_MODULE_44__["default"])(context).getInstance(),
           requestModifier: (0,_utils_RequestModifier__WEBPACK_IMPORTED_MODULE_16__["default"])(context).getInstance(),
-          errors: _core_errors_Errors__WEBPACK_IMPORTED_MODULE_27__["default"]
+          errors: _core_errors_Errors__WEBPACK_IMPORTED_MODULE_26__["default"]
         });
       } // configure controllers
 
@@ -17176,7 +17177,7 @@ function MediaPlayer() {
 
   function destroy() {
     reset();
-    _core_FactoryMaker__WEBPACK_IMPORTED_MODULE_31__["default"].deleteSingletonInstances(context);
+    _core_FactoryMaker__WEBPACK_IMPORTED_MODULE_30__["default"].deleteSingletonInstances(context);
   }
   /**
    * The ready state of the MediaPlayer based on both the video element and MPD source being defined.
@@ -17230,7 +17231,7 @@ function MediaPlayer() {
 
 
   function getVersion() {
-    return (0,_core_Version__WEBPACK_IMPORTED_MODULE_33__.getVersionString)();
+    return (0,_core_Version__WEBPACK_IMPORTED_MODULE_32__.getVersionString)();
   }
   /**
    * Use this method to access the dash.js logging class.
@@ -17345,7 +17346,7 @@ function MediaPlayer() {
       throw PLAYBACK_NOT_INITIALIZED_ERROR;
     }
 
-    (0,_utils_SupervisorTools__WEBPACK_IMPORTED_MODULE_42__.checkParameterType)(value, 'number');
+    (0,_utils_SupervisorTools__WEBPACK_IMPORTED_MODULE_41__.checkParameterType)(value, 'number');
 
     if (isNaN(value)) {
       throw _constants_Constants__WEBPACK_IMPORTED_MODULE_1__["default"].BAD_ARGUMENT_ERROR;
@@ -17456,7 +17457,7 @@ function MediaPlayer() {
 
 
   function setMute(value) {
-    (0,_utils_SupervisorTools__WEBPACK_IMPORTED_MODULE_42__.checkParameterType)(value, 'boolean');
+    (0,_utils_SupervisorTools__WEBPACK_IMPORTED_MODULE_41__.checkParameterType)(value, 'boolean');
     getVideoElement().muted = value;
   }
   /**
@@ -17826,7 +17827,7 @@ function MediaPlayer() {
 
 
   function setAutoPlay(value) {
-    (0,_utils_SupervisorTools__WEBPACK_IMPORTED_MODULE_42__.checkParameterType)(value, 'boolean');
+    (0,_utils_SupervisorTools__WEBPACK_IMPORTED_MODULE_41__.checkParameterType)(value, 'boolean');
     autoPlay = value;
   }
   /**
@@ -18641,11 +18642,11 @@ function MediaPlayer() {
         callback(null, e.error);
       }
 
-      eventBus.off(_core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"].INTERNAL_MANIFEST_LOADED, handler, self);
+      eventBus.off(_core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"].INTERNAL_MANIFEST_LOADED, handler, self);
       manifestLoader.reset();
     };
 
-    eventBus.on(_core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"].INTERNAL_MANIFEST_LOADED, handler, self);
+    eventBus.on(_core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"].INTERNAL_MANIFEST_LOADED, handler, self);
     uriFragmentModel.initialize(url);
     manifestLoader.load(url);
   }
@@ -18747,7 +18748,7 @@ function MediaPlayer() {
 
     if (typeof callback === 'function') {
       var handler = function handler(e) {
-        eventBus.off(_core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"].INTERNAL_MANIFEST_LOADED, handler, self);
+        eventBus.off(_core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"].INTERNAL_MANIFEST_LOADED, handler, self);
 
         if (e.error) {
           callback(null, e.error);
@@ -18757,7 +18758,7 @@ function MediaPlayer() {
         callback(e.manifest);
       };
 
-      eventBus.on(_core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"].INTERNAL_MANIFEST_LOADED, handler, self);
+      eventBus.on(_core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"].INTERNAL_MANIFEST_LOADED, handler, self);
     }
 
     streamController.refreshManifest();
@@ -18876,7 +18877,7 @@ function MediaPlayer() {
 
 
   function extend(parentNameString, childInstance, override) {
-    _core_FactoryMaker__WEBPACK_IMPORTED_MODULE_31__["default"].extend(parentNameString, childInstance, override, context);
+    _core_FactoryMaker__WEBPACK_IMPORTED_MODULE_30__["default"].extend(parentNameString, childInstance, override, context);
   }
   /**
    * This method returns the active stream
@@ -19005,7 +19006,7 @@ function MediaPlayer() {
     }
 
     if (!textController) {
-      textController = (0,_text_TextController__WEBPACK_IMPORTED_MODULE_46__["default"])(context).create({
+      textController = (0,_text_TextController__WEBPACK_IMPORTED_MODULE_45__["default"])(context).create({
         errHandler: errHandler,
         manifestModel: manifestModel,
         adapter: adapter,
@@ -19125,11 +19126,11 @@ function MediaPlayer() {
     if (typeof Protection === 'function') {
       //TODO need a better way to register/detect plugin components
       var protection = Protection(context).create();
-      _core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"].extend(Protection.events);
-      _MediaPlayerEvents__WEBPACK_IMPORTED_MODULE_30__["default"].extend(Protection.events, {
+      _core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"].extend(Protection.events);
+      _MediaPlayerEvents__WEBPACK_IMPORTED_MODULE_29__["default"].extend(Protection.events, {
         publicOnly: true
       });
-      _core_errors_Errors__WEBPACK_IMPORTED_MODULE_27__["default"].extend(Protection.errors);
+      _core_errors_Errors__WEBPACK_IMPORTED_MODULE_26__["default"].extend(Protection.errors);
 
       if (!capabilities) {
         capabilities = (0,_utils_Capabilities__WEBPACK_IMPORTED_MODULE_14__["default"])(context).getInstance();
@@ -19142,8 +19143,8 @@ function MediaPlayer() {
         customParametersModel: customParametersModel,
         capabilities: capabilities,
         eventBus: eventBus,
-        events: _core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"],
-        BASE64: _externals_base64__WEBPACK_IMPORTED_MODULE_39__,
+        events: _core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"],
+        BASE64: _externals_base64__WEBPACK_IMPORTED_MODULE_38__,
         constants: _constants_Constants__WEBPACK_IMPORTED_MODULE_1__["default"],
         cmcdModel: cmcdModel,
         settings: settings
@@ -19173,7 +19174,7 @@ function MediaPlayer() {
         adapter: adapter,
         dashMetrics: dashMetrics,
         mediaPlayerModel: mediaPlayerModel,
-        events: _core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"],
+        events: _core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"],
         constants: _constants_Constants__WEBPACK_IMPORTED_MODULE_1__["default"],
         metricsConstants: _constants_MetricsConstants__WEBPACK_IMPORTED_MODULE_3__["default"]
       });
@@ -19191,7 +19192,7 @@ function MediaPlayer() {
 
     if (typeof MssHandler === 'function') {
       //TODO need a better way to register/detect plugin components
-      _core_errors_Errors__WEBPACK_IMPORTED_MODULE_27__["default"].extend(MssHandler.errors);
+      _core_errors_Errors__WEBPACK_IMPORTED_MODULE_26__["default"].extend(MssHandler.errors);
       mssHandler = MssHandler(context).create({
         eventBus: eventBus,
         mediaPlayerModel: mediaPlayerModel,
@@ -19202,12 +19203,12 @@ function MediaPlayer() {
         protectionController: protectionController,
         baseURLController: baseURLController,
         errHandler: errHandler,
-        events: _core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"],
+        events: _core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"],
         constants: _constants_Constants__WEBPACK_IMPORTED_MODULE_1__["default"],
         debug: debug,
-        initSegmentType: _vo_metrics_HTTPRequest__WEBPACK_IMPORTED_MODULE_38__.HTTPRequest.INIT_SEGMENT_TYPE,
-        BASE64: _externals_base64__WEBPACK_IMPORTED_MODULE_39__,
-        ISOBoxer: codem_isoboxer__WEBPACK_IMPORTED_MODULE_40__,
+        initSegmentType: _vo_metrics_HTTPRequest__WEBPACK_IMPORTED_MODULE_37__.HTTPRequest.INIT_SEGMENT_TYPE,
+        BASE64: _externals_base64__WEBPACK_IMPORTED_MODULE_38__,
+        ISOBoxer: codem_isoboxer__WEBPACK_IMPORTED_MODULE_39__,
         settings: settings
       });
     }
@@ -19228,15 +19229,15 @@ function MediaPlayer() {
 
     if (typeof OfflineController === 'function') {
       //TODO need a better way to register/detect plugin components
-      _core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"].extend(OfflineController.events);
-      _MediaPlayerEvents__WEBPACK_IMPORTED_MODULE_30__["default"].extend(OfflineController.events, {
+      _core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"].extend(OfflineController.events);
+      _MediaPlayerEvents__WEBPACK_IMPORTED_MODULE_29__["default"].extend(OfflineController.events, {
         publicOnly: true
       });
-      _core_errors_Errors__WEBPACK_IMPORTED_MODULE_27__["default"].extend(OfflineController.errors);
+      _core_errors_Errors__WEBPACK_IMPORTED_MODULE_26__["default"].extend(OfflineController.errors);
 
       var manifestLoader = _createManifestLoader();
 
-      var manifestUpdater = (0,_ManifestUpdater__WEBPACK_IMPORTED_MODULE_43__["default"])(context).create();
+      var manifestUpdater = (0,_ManifestUpdater__WEBPACK_IMPORTED_MODULE_42__["default"])(context).create();
       manifestUpdater.setConfig({
         manifestModel: manifestModel,
         adapter: adapter,
@@ -19260,12 +19261,12 @@ function MediaPlayer() {
         segmentBaseController: segmentBaseController,
         schemeLoaderFactory: schemeLoaderFactory,
         eventBus: eventBus,
-        events: _core_events_Events__WEBPACK_IMPORTED_MODULE_29__["default"],
-        errors: _core_errors_Errors__WEBPACK_IMPORTED_MODULE_27__["default"],
+        events: _core_events_Events__WEBPACK_IMPORTED_MODULE_28__["default"],
+        errors: _core_errors_Errors__WEBPACK_IMPORTED_MODULE_26__["default"],
         constants: _constants_Constants__WEBPACK_IMPORTED_MODULE_1__["default"],
         settings: settings,
         dashConstants: _dash_constants_DashConstants__WEBPACK_IMPORTED_MODULE_2__["default"],
-        urlUtils: (0,_streaming_utils_URLUtils__WEBPACK_IMPORTED_MODULE_44__["default"])(context).getInstance()
+        urlUtils: (0,_streaming_utils_URLUtils__WEBPACK_IMPORTED_MODULE_43__["default"])(context).getInstance()
       });
       return offlineController;
     }
@@ -19424,10 +19425,10 @@ function MediaPlayer() {
 }
 
 MediaPlayer.__dashjs_factory_name = 'MediaPlayer';
-var factory = _core_FactoryMaker__WEBPACK_IMPORTED_MODULE_31__["default"].getClassFactory(MediaPlayer);
-factory.events = _MediaPlayerEvents__WEBPACK_IMPORTED_MODULE_30__["default"];
-factory.errors = _core_errors_Errors__WEBPACK_IMPORTED_MODULE_27__["default"];
-_core_FactoryMaker__WEBPACK_IMPORTED_MODULE_31__["default"].updateClassFactory(MediaPlayer.__dashjs_factory_name, factory);
+var factory = _core_FactoryMaker__WEBPACK_IMPORTED_MODULE_30__["default"].getClassFactory(MediaPlayer);
+factory.events = _MediaPlayerEvents__WEBPACK_IMPORTED_MODULE_29__["default"];
+factory.errors = _core_errors_Errors__WEBPACK_IMPORTED_MODULE_26__["default"];
+_core_FactoryMaker__WEBPACK_IMPORTED_MODULE_30__["default"].updateClassFactory(MediaPlayer.__dashjs_factory_name, factory);
 /* harmony default export */ __webpack_exports__["default"] = (factory);
 
 /***/ }),
@@ -47272,259 +47273,6 @@ function CustomTimeRanges() {
 
 CustomTimeRanges.__dashjs_factory_name = 'CustomTimeRanges';
 /* harmony default export */ __webpack_exports__["default"] = (_core_FactoryMaker__WEBPACK_IMPORTED_MODULE_0__["default"].getClassFactory(CustomTimeRanges));
-
-/***/ }),
-
-/***/ "./src/streaming/utils/DOMStorage.js":
-/*!*******************************************!*\
-  !*** ./src/streaming/utils/DOMStorage.js ***!
-  \*******************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _core_FactoryMaker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/FactoryMaker */ "./src/core/FactoryMaker.js");
-/* harmony import */ var _core_Debug__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/Debug */ "./src/core/Debug.js");
-/* harmony import */ var _constants_Constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constants/Constants */ "./src/streaming/constants/Constants.js");
-/**
- * The copyright in this software is being made available under the BSD License,
- * included below. This software may be subject to other third party and contributor
- * rights, including patent rights, and no such rights are granted under this license.
- *
- * Copyright (c) 2013, Dash Industry Forum.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without modification,
- * are permitted provided that the following conditions are met:
- *  * Redistributions of source code must retain the above copyright notice, this
- *  list of conditions and the following disclaimer.
- *  * Redistributions in binary form must reproduce the above copyright notice,
- *  this list of conditions and the following disclaimer in the documentation and/or
- *  other materials provided with the distribution.
- *  * Neither the name of Dash Industry Forum nor the names of its
- *  contributors may be used to endorse or promote products derived from this software
- *  without specific prior written permission.
- *
- *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS AS IS AND ANY
- *  EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- *  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- *  IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- *  INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- *  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- *  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
- *  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- *  POSSIBILITY OF SUCH DAMAGE.
- */
-
-
-
-var legacyKeysAndReplacements = [{
-  oldKey: 'dashjs_vbitrate',
-  newKey: 'dashjs_video_bitrate'
-}, {
-  oldKey: 'dashjs_abitrate',
-  newKey: 'dashjs_audio_bitrate'
-}, {
-  oldKey: 'dashjs_vsettings',
-  newKey: 'dashjs_video_settings'
-}, {
-  oldKey: 'dashjs_asettings',
-  newKey: 'dashjs_audio_settings'
-}];
-var LOCAL_STORAGE_BITRATE_KEY_TEMPLATE = 'dashjs_?_bitrate';
-var LOCAL_STORAGE_SETTINGS_KEY_TEMPLATE = 'dashjs_?_settings';
-var STORAGE_TYPE_LOCAL = 'localStorage';
-var STORAGE_TYPE_SESSION = 'sessionStorage';
-var LAST_BITRATE = 'lastBitrate';
-var LAST_MEDIA_SETTINGS = 'lastMediaSettings';
-
-function DOMStorage(config) {
-  config = config || {};
-  var context = this.context;
-  var settings = config.settings;
-  var instance, logger, supported;
-
-  function setup() {
-    logger = (0,_core_Debug__WEBPACK_IMPORTED_MODULE_1__["default"])(context).getInstance().getLogger(instance);
-    translateLegacyKeys();
-  } //type can be local, session
-
-
-  function isSupported(type) {
-    if (supported !== undefined) return supported;
-    supported = false;
-    var testKey = '1';
-    var testValue = '1';
-    var storage;
-
-    try {
-      if (typeof window !== 'undefined') {
-        storage = window[type];
-      }
-    } catch (error) {
-      logger.warn('DOMStorage access denied: ' + error.message);
-      return supported;
-    }
-
-    if (!storage || type !== STORAGE_TYPE_LOCAL && type !== STORAGE_TYPE_SESSION) {
-      return supported;
-    }
-    /* When Safari (OS X or iOS) is in private browsing mode, it appears as though localStorage is available, but trying to call setItem throws an exception.
-     http://stackoverflow.com/questions/14555347/html5-localstorage-error-with-safari-quota-exceeded-err-dom-exception-22-an
-      Check if the storage can be used
-     */
-
-
-    try {
-      storage.setItem(testKey, testValue);
-      storage.removeItem(testKey);
-      supported = true;
-    } catch (error) {
-      logger.warn('DOMStorage is supported, but cannot be used: ' + error.message);
-    }
-
-    return supported;
-  }
-
-  function translateLegacyKeys() {
-    if (isSupported(STORAGE_TYPE_LOCAL)) {
-      legacyKeysAndReplacements.forEach(function (entry) {
-        var value = localStorage.getItem(entry.oldKey);
-
-        if (value) {
-          localStorage.removeItem(entry.oldKey);
-
-          try {
-            localStorage.setItem(entry.newKey, value);
-          } catch (e) {
-            logger.error(e.message);
-          }
-        }
-      });
-    }
-  } // Return current epoch time, ms, rounded to the nearest 10m to avoid fingerprinting user
-
-
-  function getTimestamp() {
-    var ten_minutes_ms = 60 * 1000 * 10;
-    return Math.round(new Date().getTime() / ten_minutes_ms) * ten_minutes_ms;
-  }
-
-  function canStore(storageType, key) {
-    return isSupported(storageType) && settings.get().streaming[key + 'CachingInfo'].enabled;
-  }
-
-  function checkConfig() {
-    if (!settings) {
-      throw new Error(_constants_Constants__WEBPACK_IMPORTED_MODULE_2__["default"].MISSING_CONFIG_ERROR);
-    }
-  }
-
-  function getSavedMediaSettings(type) {
-    checkConfig();
-
-    if (!settings.get().streaming.lastMediaSettingsCachingInfo.enabled) {
-      return null;
-    }
-
-    var mediaSettings = null; //Checks local storage to see if there is valid, non-expired media settings
-
-    if (canStore(STORAGE_TYPE_LOCAL, LAST_MEDIA_SETTINGS)) {
-      var key = LOCAL_STORAGE_SETTINGS_KEY_TEMPLATE.replace(/\?/, type);
-
-      try {
-        var obj = JSON.parse(localStorage.getItem(key)) || {};
-        var isExpired = new Date().getTime() - parseInt(obj.timestamp, 10) >= settings.get().streaming.lastMediaSettingsCachingInfo.ttl || false;
-        mediaSettings = obj.settings;
-
-        if (isExpired) {
-          localStorage.removeItem(key);
-          mediaSettings = null;
-        }
-      } catch (e) {
-        return null;
-      }
-    }
-
-    return mediaSettings;
-  }
-
-  function getSavedBitrateSettings(type) {
-    checkConfig();
-
-    if (!settings.get().streaming.lastBitrateCachingInfo.enabled) {
-      return NaN;
-    }
-
-    var savedBitrate = NaN; //Checks local storage to see if there is valid, non-expired bit rate
-    //hinting from the last play session to use as a starting bit rate.
-
-    if (canStore(STORAGE_TYPE_LOCAL, LAST_BITRATE)) {
-      var key = LOCAL_STORAGE_BITRATE_KEY_TEMPLATE.replace(/\?/, type);
-
-      try {
-        var obj = JSON.parse(localStorage.getItem(key)) || {};
-        var isExpired = new Date().getTime() - parseInt(obj.timestamp, 10) >= settings.get().streaming.lastBitrateCachingInfo.ttl || false;
-        var bitrate = parseFloat(obj.bitrate);
-
-        if (!isNaN(bitrate) && !isExpired) {
-          savedBitrate = bitrate;
-          logger.debug('Last saved bitrate for ' + type + ' was ' + bitrate);
-        } else if (isExpired) {
-          localStorage.removeItem(key);
-        }
-      } catch (e) {
-        return null;
-      }
-    }
-
-    return savedBitrate;
-  }
-
-  function setSavedMediaSettings(type, value) {
-    if (canStore(STORAGE_TYPE_LOCAL, LAST_MEDIA_SETTINGS)) {
-      var key = LOCAL_STORAGE_SETTINGS_KEY_TEMPLATE.replace(/\?/, type);
-
-      try {
-        localStorage.setItem(key, JSON.stringify({
-          settings: value,
-          timestamp: getTimestamp()
-        }));
-      } catch (e) {
-        logger.error(e.message);
-      }
-    }
-  }
-
-  function setSavedBitrateSettings(type, bitrate) {
-    if (canStore(STORAGE_TYPE_LOCAL, LAST_BITRATE) && bitrate) {
-      var key = LOCAL_STORAGE_BITRATE_KEY_TEMPLATE.replace(/\?/, type);
-
-      try {
-        localStorage.setItem(key, JSON.stringify({
-          bitrate: bitrate.toFixed(3),
-          timestamp: getTimestamp()
-        }));
-      } catch (e) {
-        logger.error(e.message);
-      }
-    }
-  }
-
-  instance = {
-    getSavedBitrateSettings: getSavedBitrateSettings,
-    setSavedBitrateSettings: setSavedBitrateSettings,
-    getSavedMediaSettings: getSavedMediaSettings,
-    setSavedMediaSettings: setSavedMediaSettings
-  };
-  setup();
-  return instance;
-}
-
-DOMStorage.__dashjs_factory_name = 'DOMStorage';
-var factory = _core_FactoryMaker__WEBPACK_IMPORTED_MODULE_0__["default"].getSingletonFactory(DOMStorage);
-/* harmony default export */ __webpack_exports__["default"] = (factory);
 
 /***/ }),
 
